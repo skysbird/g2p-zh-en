@@ -19,7 +19,6 @@ class G2P:
         ch = re.sub("[^ a-z'.,?!\-。，！]", "", ch)
         pout = g2p(ch)
         out = self.en_mapper.convert(pout)
-        out = ['<noch>'] + out + ['<noch>']
         return out
     
     #english cannot handle, forward to pinyin
@@ -27,7 +26,7 @@ class G2P:
         text = cn2an.transform(ch, "an2cn")
         pout = lazy_pinyin(text, style=Style.TONE3, neutral_tone_with_five=True)
         out = self.pinyin_mapper.convert(pout)
-        return ['<noeng>'] + out + ['<noeng>']
+        return out
 
     def g2p(self,language='zh-cn',text:str=None) -> List:
         if language == 'zh-cn':
