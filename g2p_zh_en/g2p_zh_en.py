@@ -3,7 +3,7 @@ from pypinyin import pinyin, lazy_pinyin, Style
 from typing import List
 import cn2an
 import re
-from g2p_en import G2p
+from .g2p_en import G2p
 g2p = G2p()
 
 
