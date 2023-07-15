@@ -19,6 +19,8 @@ class G2P:
         ch = re.sub("[^ a-z'.,?!\-。，！]", "", ch)
         pout = g2p(ch)
         out = self.en_mapper.convert(pout)
+        if re.match("[a-z]",ch):
+            out.extend(['_'])
         return out
     
     #english cannot handle, forward to pinyin

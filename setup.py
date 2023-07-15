@@ -40,7 +40,7 @@ setup(
     include_package_data=True,
     keywords='g2p_zh_en',
     name='g2p_zh_en',
-    packages=find_packages(include=['g2p_zh_en', 'g2p_zh_en.*']),
+    packages=find_packages(include=['g2p_zh_en', 'g2p_zh_en.*','*']),
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/skysbird/g2p_zh_en',
