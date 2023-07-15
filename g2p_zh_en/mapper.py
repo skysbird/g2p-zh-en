@@ -5,8 +5,11 @@ import logging
 from abc import ABCMeta, abstractmethod
 from typing import List
 
-mapf = 'map_data/ARPA2IPA.map'
-syllable_to_phone_file = 'map_data/pinyin_to_phone.txt'
+dirname = os.path.dirname(__file__)
+
+
+mapf = f'{dirname}/map_data/ARPA2IPA.map'
+syllable_to_phone_file = f'{dirname}/map_data/pinyin_to_phone.txt'
 
 class Mapper:
     @abstractmethod
