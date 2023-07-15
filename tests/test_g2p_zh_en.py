@@ -26,7 +26,7 @@ class TestG2p_zh_en(unittest.TestCase):
 
     def test_001_something(self):
         """Test something."""
-        out = self.g2p.g2p(text = "使用Javascript和PHP写的！。")
+        out = self.g2p.g2p(text = "Hello this is a test page.")
         print(out)
 
     def atest_002_something(self):

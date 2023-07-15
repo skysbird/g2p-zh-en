@@ -19,7 +19,7 @@ class G2P:
         ch = re.sub("[^ a-z'.,?!\-。，！]", "", ch)
         pout = g2p(ch)
         out = self.en_mapper.convert(pout)
-        if re.match("[a-z]",ch):
+        if re.match("[^ a-z'.,?!\-。，！]",ch[-1]):
             out.extend(['_'])
         return out
     
