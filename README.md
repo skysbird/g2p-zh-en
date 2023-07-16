@@ -49,10 +49,11 @@ Please note that the output represents the phonetic representation of the input 
 ## In Progress
 The following features are currently being developed:
 
-G2P conversion with Chinese as the primary language.
-G2P conversion with English as the primary language.
-Handling various special characters, such as numbers and currencies.
+- [x] G2P conversion with Chinese as the primary language.
+- [x] G2P conversion with English as the primary language.
+- [ ]Handling various special characters, such as numbers and currencies.
 Contribution
+
 If you would like to contribute to this project, you can:
 
 Submit bug reports or feature requests on the project's issue page.
