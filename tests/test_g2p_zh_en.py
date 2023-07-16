@@ -26,7 +26,14 @@ class TestG2p_zh_en(unittest.TestCase):
 
     def test_001_something(self):
         """Test something."""
-        out = self.g2p.g2p(text = "On every side the most charming retreats open to them, nor is there a metropolis in the world surrounded by so many rural villages, picturesque parks, and elegant casinos.")
+        #out = self.g2p.g2p(text = "i have 100 dollar")
+        #print(out)
+        #out = self.g2p.g2p(text = "i have 100 dollar",language='en-us')
+        #print(out)
+
+        out = self.g2p.g2p(text = "我有100美元,i'm so rich.")
+        print(out)
+        out = self.g2p.g2p(text = "i have 100 dollar,我是不是很富有？",language='en-us')
         print(out)
 
     def atest_002_something(self):
