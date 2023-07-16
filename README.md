@@ -51,7 +51,7 @@ The following features are currently being developed:
 
 - [x] G2P conversion with Chinese as the primary language.
 - [x] G2P conversion with English as the primary language.
-- [ ]Handling various special characters, such as numbers and currencies.
+- []Handling various special characters, such as numbers and currencies.
 Contribution
 
 If you would like to contribute to this project, you can:
